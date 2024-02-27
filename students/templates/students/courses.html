@@ -1,0 +1,13 @@
+{% extends "students/layout.html" %}
+
+{% block body %}
+    <h1>Course {{ course.courseID }}</h1>
+    
+    <ul>
+        <li>Origin: {{ flight.origin }}</li>
+        <li>Destination: {{ flight.destination }}</li>
+        <li>Duration: {{ flight.duration }} minutes</li>
+    </ul>
+
+    <a href="{% url 'index' %}">All Courses</a>
+{% endblock %}
